@@ -17,8 +17,8 @@ This is the excel file that Telco Bot reads from, which is converted into a data
 Sample output of a query on Telegram. 
 
 # Screenshots
-![Screenshot](images/screen1.jpeg)
-![Screenshot](images/screen2.jpeg)
-![Screenshot](images/screen3.jpeg)
-![Screenshot](images/feature1.jpeg)
-![Screenshot](images/feature2.jpeg)
+<img src="images/screen1.jpeg" width="540" height="960">
+<img src="images/screen2.jpeg" width="540" height="960">
+<img src="images/screen3.jpeg" width="540" height="960">
+<img src="images/feature1.jpeg" width="540" height="960">
+<img src="images/feature2.jpeg" width="540" height="960">
