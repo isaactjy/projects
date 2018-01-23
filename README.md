@@ -15,3 +15,10 @@ This is the excel file that Telco Bot reads from, which is converted into a data
 
 **out.jpg** -
 Sample output of a query on Telegram. 
+
+# Screenshots
+![Screenshot](images/screen1.jpeg)
+![Screenshot](images/screen2.jpeg)
+![Screenshot](images/screen3.jpeg)
+![Screenshot](images/feature1.jpeg)
+![Screenshot](images/feature2.jpeg)
