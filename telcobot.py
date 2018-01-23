@@ -18,14 +18,14 @@ start = """Are you constantly wanting to change phones or to change plans? Fret 
 Based on the selections you make, TelcoBot will help you find a suitable plan based on the your desired requirements. 
 TelcoBot will also help you check out the latest phone prices. All these information will be output to you for you to consider which phone to purchase and which contract plan to commit to. 
 Press /request to begin"""
-TOKEN = '-----YOUR BOT TOKEN HERE--------'
+TOKEN = '---YOUR BOT TOKEN HERE---'
 
 # Read from Excel (not needed in the actual version - only for technical demo)
 df_con = pd.read_excel('telecom.xlsx', 'Contract')
 df_sim = pd.read_excel('telecom.xlsx', 'SIMonly')
 
 # Set parameters for printing dataframe as an image using imgkit
-path_wkthmltoimage = 'wkhtmltoimage.exe' 
+path_wkthmltoimage = 'wkhtmltoimage.exe'
 config = imgkit.config(wkhtmltoimage=path_wkthmltoimage) 
 filename = 'out.html' 
 outname = 'out.jpg'
@@ -120,11 +120,11 @@ class TelcoBot(telepot.helper.ChatHandler):
         with open(filename, 'w') as f:
                 f.write(df.to_html()) 
         if(fn==0):
-            imgkit.from_url(filename, outname ,options={'width':'512'}) #pass options values here
+            imgkit.from_url(filename, outname ,options={'width':'512'},config=config) #pass options values here
         elif(fn==1):
-            imgkit.from_url(filename, outname ,options={'width':'620'}) #pass options values here
+            imgkit.from_url(filename, outname ,options={'width':'620'},config=config) #pass options values here
         elif(fn==2):
-            imgkit.from_url(filename, outname ,options={'width':'768'}) #pass options values here
+            imgkit.from_url(filename, outname ,options={'width':'768'},config=config) #pass options values here
 
     ## Bot functions ##
     def on_chat_message(self,msg):
